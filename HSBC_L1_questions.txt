@@ -1,0 +1,123 @@
+Prashant	
+---------	
+Give background of project and experience - MARRS	
+Explain business need of MARRS	
+Long form of DTCC ? What do it do ?	
+what is DODD Frank ? What its regulations ?	
+What is OTC ? details on OTC.	
+How do u estimate efforts in delivering solution?	
+Your role in project	
+What do u do when you get less time from management to deliver?	
+Do you follow SCRUM. WHAT is SCRUM?	
+Whats the difference between Product backlog and sprint backlog?	
+What type of risk is reported in your application?	
+What is Interest rate Risk?	
+Which all Project Development Methodologies you have worked on?	
+What are important aspects of Agile?	
+Introduce youself with your experience and in wich technology you have worked.	
+Explain your last project and role.	
+Most challanging task you did in your last project.	
+How do you estimate the user story	
+Product Owners role and responsibility	
+Which tool you are using for integration	
+Which project managemet tools you have used	
+What is the most challenging problems you have faced in current project	
+Product backlog vs Sprint Backlog	
+who will look into any Priority task	
+	
+Eknath	
+-------	
+What is FPML? How to convert XML to FPML - name the libraries	
+Explain record keeping	
+What kind of reports are sent to DTCC	
+What is IO package? What design patterns are used in it.	
+Explain decorator	
+How polymorphism is implemented in Spring.	
+How encapsulation is implemented in spring.	
+What is count down latch	
+What is default HTTP port, admin console port for IBM websphere	
+Types of indexes in DB	
+What is base object in javascript	
+What is expression in JSP	
+How does oops is implemented in Spring?	
+How inheritence is implemented in Spring?	
+What is Error? How do you handle errors in java?	
+Which design patterns are used in IO package and how?	
+What design pattern is used while getting db connection or in connection pool?	
+Whats the difference between Callable and Runable?	
+What would be a query to get the10th highest salary from employee table which has 1 million records.?	
+	
+Chandresh	
+	
+Tell me about your current/last project.	
+What all type of integration points you have used?	
+ Which JMS provider you have used?	
+Your role in the project.	
+What is relationship between hashcode() and equals() methods?	
+Explain both methods in detail in the view of HashMap.	
+What happens if we use custom class object as a key, put the element in hashmap and then change the value of the member variables of the key?  
+What happens if we use custom class object as a key, put the element in hashmap and then change the value of the member variables of the key?  
+	
+ Is Arraylist synchronized? What if I would like to synchronize it?	
+ What is Spring IOC?	
+ Do you know Java Memory Management?	
+How GC works?	
+Explain various types of GC algorithms.	
+Explain Minor/Major GC.	
+Where Java keeps loaded classes? Will classes loaded in Perm space ever be garbage collected?	
+ What is coherence?	
+How you used it (Coherence) in your project? - Project specific Question.	
+ How you store Coherence elements in Persistent Storage?	
+What all new features you know which were added in JDK 1.8?	
+Spring Security	
+What type of Encryption is used in Spring security (WS-Security).	
+How MD5 works?	
+Encryption and Descreption	
+Callable vs Runnable	
+Difference between equals and hashcode.	
+ Interviewer will ask some questions which leads to immutable concepts and Singleton Design pattern	
+ExecutorService : How will you change the thread name ?	
+About Enums	
+Which version of java you have used and Have you worked on any other java version?	
+Changes in version 1.5 and above ?	
+How will you achieve runtime injection ? Apart from DI do we have any other way to achieve this.	
+	
+Sailesh	
+	
+Have you worked in Junit	
+Which mock you have used in your current project	
+If parent is singletone and child is prototype then how many instances will be created for N-Requests	
+Will it works  List<String> list=new ArrayList<Object>()? If not why?	
+In which senarios Abstract class have a constructor.Is it valid reason to have aconstructor in a abstract class.	
+Differences between jdk1.4 and 1.5	
+Can you write parent child relationship in spring configuration and how?	
+Have you worked type eraser?	
+How arraylist is growable and shrinkable?	
+What is rehashing ?	
+How you are deciding  which collection need to use in project	
+	
+	
+	
+Java:	
+How synchronisation is achieved in java?	
+How to prevent deadlock? 	
+Which all new java 5 features you've used?	
+How does hashmap works internally? 	
+Difference between Fail fast and Fail safe iterators 	
+Question on custom exception. How do you design/implement it? 	
+Spring bean life cycle 	
+How does spring bean creation is different than normal jvm/java objects? 	
+Scopes in spring 	
+Spring Security: how does encoding happen in spring security?	
+Have you worked on LDAP authentication in spring security? 	
+Difference between Frameworks and Design patterns	
+Where does following design pattern used in java: Builder, Abstract Factory,  Command, Chain of responsibility, Proxy 	
+What is Chain of responsibility pattern?	
+	
+Project mgmt:	
+Product backlog vs Sprint Backlog	
+What is Story point? How is it linked to estimation?	
+What you do/discuss in Sprint Planning meeting?	
+Which tool you've used for Sprint?	
+How do you keep yourself updated with new technologies? Any specific example from last 2 months	
+Have you created any tool or solution which helped in performance improvement or made life easier of your teammates?	

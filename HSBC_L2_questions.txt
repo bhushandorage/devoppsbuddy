@@ -1,0 +1,55 @@
+*******Rajesh's interview
+Panel Name : Rajan Patel, Lindsey Cantle			
+Sr No	Question	Proposed Answer	Technology
+1	Introduce your current Project	Explained marrs	java
+2	Explain how Murex Message Parser works in the Marrs	we have customized system which store parsed data in fpml	java
+3	Explain how you populate values in fpml in the Marrs	we have customized system which runtimely build fpml	java
+4	Explain how did you co-related Fpml Message and response from DTCC	Fpml have messageId in fpml header which we get back in response in real time reporting while in batch reporting we generally use Data Submitter Id.	java
+5	How many message you were processing per day in Marrs	1k	java
+6	How will you handle 1 million message	we will create dedicated deplyment of application for various product and will join with router with main channel	java
+7	Is your current design capable to handle 1 milliion message/day	No,  we may have to redesign database. Have to introduce repository/historical database, archival process etc…	java
+8	Design application which will sort a file which contains 1 million rows. Each rows have trade Id and its version.  For example we have trade id 11111 and it have five version v1, v2.. V5. We need to group record based on trade_id and version and have to sort.	1>If we know the limit of input source and we have enough heap memory for our program then we can use TreeMap and solve the problem.
+2>If we have database, then we can parse and upload data to database and can process
+3>Use file based sorting algorithm we can use temporary files and sort the data	java
+9	If you design problem explained in row (8) and your team member challenge it, what will you do ?	I will listen his concern and match two different approach and will choose better option	scrum
+10	What challenges you faced while dealing with Global team ? How did you solve it.	Time zone issue,  team at distance places to problem in communication and understanding each other	scrum
+11	How will know that what you implemented is correct ?	Customer Demo	scrum
+12	If you are starting work on row (8) then what question you ask to story designer ?	I will Checks story point. If I need any resource then ask team to work with me. I will look its feasibilty and ask for proper infrastructure. In short I will analyse it and fill all the gap of my understanding. I will not start the work untill entire story I understand	scrum
+13	while development, if you find any new bug what will you do ?	I will inform product owner and product owner will decide its priority. I will not work on it.	scrum
+
+
+
+********Abhijit's interview 
+Panel Name : Rajan Patel, Lindsey Cantle
+1: Proect introduction: It was legacy .net based application so his follow-up questions were on similar lines.  
+
+2: My role and what particular problem we faced while re-writing the legacy .net application 
+Answer: Main challenge was to understand all the business scenarios implemented in that application. There was practically no documentation and even the end-users were not fully aware of all business rules. 
+
+3: How did you map .net collections to java collections? Whether you replaced it one-to-one with java alternates?: 
+Answer: I told them I'd little idea about .net specifics/language constructs so I didn't go for that approach. We concentrated more on the flow/sequence of events and replicated that in java. I wrote pseudo-code, flowcharts of old code as reference points for new system. 
+
+3: Which collections you used in current application and what were the considerations/reasons behind choosing them? 
+Answer: Mostly ArrayList and HashMap. Justified with theoritical concepts of these collections e.g. when they are used, what's their characteristics etc.  
+
+4: What things need to be considered while using hashmap for your application classes? Basically he wanted to know which conditions the class need to obey so that it'll be used as Key in hashmap. 
+Answer: Explained breifly how hashmap is implemented. Two factors or conditions: First is the contract between hashCode() and equals() methods. Second is the keys should be immutable. 
+
+5: What will happen when we insert 1001th element in hashmap whose size is 1000? 
+Answer: Hashmap will reconstruct itself. But not at addition of 1001th item, it'll happen much before that based on the loadFactor value which is usually 0.75. So, in this case, the hashmap will re-hash the items when 751st item is added. Rehashing meaning the all items will be added again in new re-sized hashmap object. The new size is typically 1.5th of earlier size.  
+
+6: Scenario: There is a file with million records. Each record has trade id and associated version no. One trade id can have multiple versions. So if trade T1 has three versions V3, V1, V2; there'll be three different records in the input file. These recrods are not in order. 
+Output file will have all these records but the versions should be in order e.g. T1V1, T1V2, T1V3 
+What factors will you consider while implementation? Any other better solution?
+Answer: I'll use treemaps to maintain the order. I'll write a custom comparator which will consider version no of the trade id inside compareTo() method. I'll use treemap within treemap. I realised it's not a good solution.
+
+Follow-up questions on solution proposed. I made changes to earlier answer where single map can be used. 
+
+6.1: Earlier proposed solution will be slow. What'll we you do? 
+Answer: I told we can implement multi-threading. I'll spawn threads using executor service. Each thread will work on a chunk of data from the input file. These threads will write into a concurrentHashmap.
+
+6.2: What'll you do if you don't have ConcurrentHashmap provided by java i.e. how will you handle the multi-threaded system?
+Answer: I'll extend existing Hashmap class (which is not synchronised collection). I'll override methods such as add() and use synchronised blocks to ensure only one thread modifies the underlining map element. S
+
+7: Scenario: You found out one critical defect while doing unit testing. No one knows about the defect. What will you do? 
+My answer> I'll analyse whether it is really a defect. Or a new feature or a test scenario which we had not discussed/accounted for in earlier discussions. In first case i.e. actual defect, either me or other team-member will work to resolve it that time itself. But in other cases, I'll create a jira ticket or task and will take it up for discussion/implementation in subsequent sprints.
